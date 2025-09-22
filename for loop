@@ -1,0 +1,21 @@
+import java.util.Scanner;
+ public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a word: ");
+        String input = sc.nextLine();
+
+        for (int i = 0; i < input.length(); i++) { // input.charAt(i) pulls out the character at position i
+            // The i = 0 means the output will start at the first letter of the string
+            //The i < input.length() means the program would stop when it reachs the end of the string
+            //and then the i++ means the program will move to the next letter each time
+            System.out.println(input.charAt(i)); // the input.charAt(i) will pull out the character at the position i
+            
+        }
+    }
+}
+//I figured this out from our previous lessons by knowing how to use the Scanner class to take input from the user 
+//and then i used a for loop to go through the string from the users input. The loop starts at 0 because strings 
+//in Java begin from zero. SO the program keeps going until it reaches the length of the string.
+// The i++ makes the loop move to the next letter each time it like with the numbers but intead of a int its a string so it will not do math.
+//The input.charAt(i) pulls out one letter from the string at a time so it can be printed on its own line.
